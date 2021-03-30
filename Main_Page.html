@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Lovely Health Services
+</title>
+<style>
+
+body
+{
+
+background-image:url(bg.jpg);
+
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+font-family: Palatino;
+}
+.item1,.item2,.item3
+{
+
+border:2px solid black;
+background-image:url(phc1.jpg);
+ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+a
+{
+color:white;
+font-size:25px;
+}
+
+.p1
+{
+color:black;
+font-size:20px;
+}
+p
+{
+color:black;
+}
+h4
+{
+color:#ffe39f;
+font-size:20px;
+}
+.oldgrid{grid-area: a1;}
+.newlast{grid-area:  a2;}
+.newadd{grid-area: b1;}
+.newadd2{grid-area: b2;}
+.newgrid
+{
+display: grid;
+grid-gap:1px;
+
+grid-template-areas:'a1 a1 a2 a2'
+}
+.item1 {grid-area: h1;}
+.item2 {grid-area: h2;}
+.item3 {grid-area: h3;}
+.grid-container
+{
+
+display: grid;
+grid-gap:4px;
+padding-left:80px;
+grid-template-areas: 'h1 h1 h2 h2 h3 h3'
+
+}
+
+.newlast
+{
+
+display: grid;
+grid-gap: 4px;
+grid-template-areas:'b1 b1 b2 b2'
+}
+.grid-container > div 
+{
+
+
+
+text-align:center;
+height:420px;
+width:400px;
+font-size:20px;
+font-family: Arial;
+}
+h1
+{
+
+
+font-family:Palatino;
+background-color:#B0E0E6;
+
+padding-left:10px;
+padding-right:10px;
+width:1000px;
+color:purple;
+
+
+font-size:50px;
+}
+.newadd,.newadd2
+{
+
+border:1px solid black;
+
+background-image:url(phc1.jpg);
+height:54px;
+width:90px;
+}
+.newlast
+{
+padding-left:10px;
+padding-top:30px;
+
+}
+.log
+{
+font-size:23px;
+text-decoration:none;
+
+font-color:purple;
+}#logingan,#signupgan,.newgrid,.newadd,.newadd2{font-family:Palatino;}
+</style>
+</head>
+<body>
+<b><center>
+<div class="newgrid">
+<div class="oldgrid"><h1>Welcome to Lovely Health Services</h1></div><div class="newlast">
+<div class="newadd"><center><p style="color:purple"><a href="Login.html" class="log"onmouseover="fa()"onmouseout="fb()"id="logingan"><i>Login</i></a></p></center></div>
+<div class="newadd2"><center><p style="color:purple"><a href="Sign_up.html"class="log"onmouseover="fc()"onmouseout="fd()"id="signupgan"><i>Signup</i></a></p></center></div></div>
+</div></center>
+<p class="p1">Health service delivery systems that are safe, accessible, high quality, people-centred, and
+ integrated are critical for moving towards <big><i>Universal Health Coverage</i></big>. Service delivery systems are responsible for providing 
+ health services for patients, persons, families, communities and populations in general, and not only care for patients.
+ While patient-centred care is commonly understood as focusing on the individual seeking care (the patient), 
+ people-centred care encompasses these clinical encounters and also includes attention to the health of people in their 
+ communities and their crucial role in shaping health policy and health services. </p>
+<div class="grid-container">
+<div class="item1"> <br><big><u><a href="https://www.who.int/primary-health/en/" id="hoe"onmouseover="f1()"onmouseout="f2()">Primary Health Care
+</a></u></big><p><img src="p1.jpg"class="gred"><br><br><i>At its heart, primary health care is about caring for people, rather than simply treating
+ specific diseases or conditions. </i></div>
+<div class="item2"><br><big> <u><a href="https://www.hopkinsmedicine.org/healthlibrary/test_procedures/urology/types_of_home_health_care_services_85,p00606"id="hoe1"onmouseover="f3()"onmouseout="f4()">Available Services</a></u></big><p><img src="p3.jpg"class="gred"><br><br>
+<i>The range of home health care services a patient can receive at home is limitless. 
+Depending on the individual patient's situation, care can range from nursing care to
+ specialized medical services</i></div>
+<div class="item3"><br><big><u><a href="https://www.who.int/topics/pharmaceutical_products/en/"id="hoe2"onmouseover="f5()"onmouseout="f6()">Pharmaceutical Products</a></u></big><p><img src="s1.jpg"class="gred"><br><br>
+<i>These are a fundamental component of both modern and traditional medicine.
+ It is essential that such products are safe, effective, and of good quality, and are prescribed and used rationally.</i></div>
+</div>
+<p style="font-size:20px"class="p1">All the information provided in the page are being extracted from external sources with legal permissions. None of the above data is
+is false or made up by the administrators of the site.Avaialable Health Services cannot be accurate as they vary from  place to place and also dependent on working staff.
+ No individual is being given any kind of priority from the site managers.All activites done by the site have been approved by World Health Organization.</p>
+<h4><center>For further details or  any suggestions visit our <a href="About_us.html" id="newer"onmouseover="f7()" onmouseout="f8()"style="color:#ffe39f"><u>About us</u></a> page</center></h4>
+ <h4 style="color:grey"><center>2019 © All rights reserved to Lovely Health Services</center></h4>
+</b>
+<script>
+function fa()
+{
+document.getElementById("logingan").style.color="black";
+document.getElementById("logingan").style.fontSize="25px";
+}
+function fb()
+{
+document.getElementById("logingan").style.color="purple";
+document.getElementById("logingan").style.fontSize="23px";
+}
+function fc()
+{
+document.getElementById("signupgan").style.color="blue";
+document.getElementById("signupgan").style.fontSize="25px";
+}
+function fd()
+{
+document.getElementById("signupgan").style.color="purple";
+document.getElementById("signupgan").style.fontSize="23px";
+}
+function f1()
+{
+document.getElementById("hoe").style.color="blue";
+document.getElementById("hoe").style.fontSize="30px";
+}
+function f2()
+{
+document.getElementById("hoe").style.color="purple";
+document.getElementById("hoe").style.fontSize="25px";
+}
+function f3()
+{
+document.getElementById("hoe1").style.color="blue";
+document.getElementById("hoe1").style.fontSize="30px";
+}
+function f4()
+{
+document.getElementById("hoe1").style.color="purple";
+document.getElementById("hoe1").style.fontSize="25px";
+}
+function f5()
+{
+document.getElementById("hoe2").style.color="blue";
+document.getElementById("hoe2").style.fontSize="30px";
+}
+function f6()
+{
+document.getElementById("hoe2").style.color="purple";
+document.getElementById("hoe2").style.fontSize="25px";
+}
+function f7()
+{
+document.getElementById("newer").style.color="blue";
+document.getElementById("newer").style.fontSize="30px";
+}
+function f8()
+{
+document.getElementById("newer").style.color="#ffe39f";
+document.getElementById("newer").style.fontSize="25px";
+}
+</script>
+</body>
+</html>

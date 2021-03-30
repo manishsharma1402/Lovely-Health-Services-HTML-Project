@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body
+{
+background:url(hsc2.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form
+{
+font-size:30px;
+
+font-weight:bold;
+color:black;
+width:200px;
+
+}
+input
+{
+height:25px;
+width:200px;
+}
+#div
+{
+padding-top:600px;
+}
+#leela
+{
+padding-left:200px;
+
+}
+.fp
+{
+color:blue;
+height:25px;
+font-size:12px;
+}
+.button
+{
+height:30px;
+font-size:15px;
+}
+</style>
+<title>Login</title>
+</head>
+<body>
+<script>
+function validate()
+{
+if(document.leelu.user.value=="")
+{
+alert("Please enter a username");
+return false;
+}
+else if(document.leelu.pass.value=="")
+{
+alert("Please Enter your password");
+return false;
+}
+else
+{
+alert("You have Successfully logged in");
+document.getElementById("newdiv").style.display="";
+
+return false;
+}
+return false;
+}
+function fun123()
+{
+document.getElementById("user123").style.fontSize="40px";
+document.getElementById("user123").style.color="red";
+}
+function fun456()
+{
+document.getElementById("user123").style.fontSize="15px";
+document.getElementById("user123").style.color="black";
+}
+function fun1234()
+{
+alert("We Dont have any services available to recover password. Please Signup again to our portal. We regret for the inconvenience caused");
+return false;
+}
+</script>
+<div align="center" id="div">
+<form name="leelu" id="leelu">
+<table>
+<tr>
+<td >Username:<br><br></td>
+<th   align="center"><input type="text" name="user" id="user123" onkeydown="fun123()" onkeyup="fun456()"><br><br></th>
+</tr>
+<tr><td></td><th></th></tr>
+
+<tr>
+<td>Password:</td> <href="Main_Page.html"><input type="button" value="Click here to continue" style="color:blue" class="contin"align="center" /></a><br></div>
+<div id="leela">
+<th><input type="password" name="pass"></th>
+</tr>
+</table><br>
+
+<input type="button" class="button"value="Submit" onclick="validate()"><br>
+<div style="display:none" id="newdiv"><a
+<a.href="Sign_up.html"><input type="button" value="Forgot Password" onclick="fun1234()" class="fp"></a>
+
+</div>
+</form>
+</div>
+</body>
+</html>

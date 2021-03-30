@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>  
+ 
+  <title>Signup Page</title>
+  
+<style>
+    
+.pad
+	
+{
+	padding-left:100px;
+	}
+   
+ input
+    {
+        width: 50%;
+        height: 30px;
+        text-size="5px";
+    }
+  
+  h1
+    {
+        color:white;
+    }
+	
+.cs
+	{
+	color:teal;
+	
+	}
+
+ 
+ body
+  {
+  background:url(istockphoto-628328284-2048x2048.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  font-family:Palatino;
+  }
+ 
+ input,form
+  {
+  font-family:Palatino;
+  font-weight:bold;
+  }
+ 
+ #form
+  {
+  padding-left:500px;
+  }
+  
+
+  input
+  {
+  width:200px;
+  }
+  
+td
+  {
+  font-size:25px;
+ 
+  }
+ 
+ th
+  {
+  font-size:20px;
+  }
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<script>
+function fun()
+{
+var a=document.myForm.password.value;
+var b=document.myForm.email3.value;
+
+if(document.myForm.first.value=="")
+{
+alert("Please Enter your first name");
+return false;
+}
+else if(document.myForm.last.value=="")
+{
+alert("Please Enter your last name");
+return false;
+}
+else if(document.myForm.email.value=="")
+{
+alert("Please Enter a Username name");
+return false;
+}
+else if(document.myForm.email1.value=="")
+{
+alert("Please Enter your Email");
+return false;
+}
+else if(document.myForm.email1.value=="")
+{
+alert("Please Enter your Email");
+return false;
+}
+else if(document.myForm.email2.value=="")
+{
+alert("Please Enter your Mobile Number");
+return false;
+}
+else if(document.myForm.password.value=="")
+{
+alert("Please Enter a Password");
+return false;
+}
+else if(document.myForm.email3.value=="")
+{
+alert("Please Confirm Your Password");
+return false;
+}
+else if(a!=b)
+{
+alert("Your Passwords doesnt match");
+return false;
+}
+
+
+else if(document.myForm.email4.value=="")
+{
+alert("Enter The Address");
+return false;
+}
+else
+{
+fun345();
+alert("You have Successfully Signed up. Please Login");
+document.getElementById("tagg").style.display="";
+return false;
+}
+
+}
+function fun345()
+{
+var c=document.querySelector('input[class = "gender"]:checked').value;
+if(c!="100"&&c!="200")
+{
+alert("Please Choose your Gender");
+return false;
+}
+}
+</script>
+<div class="container">
+
+<div style="background-color:#3CB371;">
+ <marquee><h1>Welcome to Lovely Health Care Services. Please Signup to continue...</h1></marquee>
+ <div style="padding-bottom:5px;background-color:white;height:25px;">
+ <p style="font-size:25px;"><b>
+
+  <a href="Login.html"style="text-decoration:none;padding:10px;color:black;">Login</a>
+    <a href="about_us.html" style="text-decoration:none;padding:10px;color:black;">About Us</a><br><br></p>
+	<p></p></b></div>
+	</div>
+    
+
+  <body>
+<div id="form">
+    <pre>
+    <form name="myForm" id="myForm">
+  <table>
+    <tr>
+      <td >Enter Your first Name:</td>
+      <th align="center"><input type="text"id="1" name="first"  /></td>
+    </tr>
+    <tr>
+      <td >Enter your last Name:</td>
+      <th align="center"><input type="text"id="2" name="last"  />
+</td>
+ 
+  </tr>
+   
+ <tr>
+     
+ <td >Choose your username:</td>
+      <th align="center"><input type="text"id="3" name="email" /></td>
+    </tr>
+	<tr>
+      <td>Enter Email:</td>
+      <th align="center"><input type="text" id="4"  name="email1"  /></td>
+    </tr>
+	<tr>
+      <td >Mobile Number:</td>
+      <th align="center"><input type="text" id="5" name="email2" /></td>
+    </tr>
+	<tr>
+      <td >Create a Password:</td>
+      <th align="center"><input type="password" id="6" name="password"  /></td>
+    </tr>
+	<tr>
+      <td >Confirm your Password:</td>
+      <th align="center"><input type="password" id="7" name="email3"   /></td>
+    </tr>
+	<tr>
+      <td >Select Gender:</td>
+      <th align="center"><table>
+	  <tr>
+	  <td class="new123"><i>Male:</i></td>
+	  <th align="center"><input type="radio" id="j1" class="gender" name="gend" value="100" /></th></tr>
+	  <tr>
+	  <td class="new123"><i>Female:</i></td>
+	  <th align="center"><input type="radio" id="j2" class="gender" name="gend" value="200"  /></th>
+	  </tr>
+	  
+	  </table>
+    </tr>
+	<tr>
+      <td >Address:</td>
+      <th align="center"><input type="text" name="email4" id="8" style="height:100px;" /></td></tr><br>  
+	  </table><br>
+	  <div class="pad">
+	  <input type="button" align="center"class="cs" value= "Submit Form" onclick="fun()"  /></div>
+	  <div style="display:none" id="tagg" align="center"><a href="Login.html"></div>
+	  </form>
+      </pre>
+  </div>
+
+<h2 style="color:gray"><center>2019 All rights reserved to Lovely Health Services</center></h4>
+
+
+ 
+
+
+
+ 
+
+</body>
+</html>

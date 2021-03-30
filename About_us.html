@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<style>
+body
+{
+background:url(1.png);
+background-repeat:no-repeat;
+background-size:cover;
+bg color:white;
+
+}
+h2
+{
+font-size:30px;
+background-color:white;
+color:teal;
+font-family:ariel;
+}
+
+.new1
+{
+font-size:20px;
+font-family:helvetica;
+}
+.item1{grid-area:h1;}
+.item2
+{
+grid-area:h2;
+font-size:20px;
+font-family:helvetica;
+
+}
+form
+{
+font-size:20px;
+font-family:helvetica;
+}
+#agent
+{
+font-size:20px;
+font-family:helvetica;
+font-style:italic;
+}
+.grid-container
+{
+display: grid;
+grid-gap:75px;
+padding-left:10px;
+color:black;
+grid-template-areas: 'h1 h1 h2 h2';
+}
+
+
+</style>
+<script>
+function validate()
+{
+if(document.myForm.Name.value=="")
+{
+alert("Please provide your name");
+return false;
+}
+else if(document.myForm.EMail.value=="")
+{
+alert("Please provide your email");
+return false;
+}
+else if(document.myForm.comment.value=="")
+{
+alert("Please Enter a feedback");
+return false;
+}
+else
+{
+alert("Successfully recieved the feedback");
+document.getElementById("texas").style.display="";
+return (true);
+}
+}
+</script>
+</head>
+<body>
+<h2><center>About us</center></h2>
+<div class="new1"><p>The websites main aim is to create a platform for the people who require online health services, health support and other pharma products.<br><br></p></div>
+ <div class="grid-container"><div class="item1"></div><div class="item2"><p>The people involved in the project are <b><i> Jovin,Manish,Saket</i></b> and<b><i> Ravi</i></b>.
+  We as a team have worked together in finishing this project.The home page and the suggestions page was created by Jovin. The description page was created by Manish.The Events page is still under development. The Analysis page was created by Saket.The Login page at the start was created by Jovin.All together we worked on the vision of guiding those people who seek the need of online health service.</p></div></div><center>
+<p id="agent">If you have any suggestions or complaints please fill your details and feed your response in the comment section</p></center><br>
+<form id="myForm" name="myForm">
+<center>
+Name:  <input type="text" name="Name"/><br><br>
+Email:  <input type="text" name="EMail"/><br><br>
+Complaint or Suggestion:<br>
+
+<textarea rows="4" cols="50" name="comment" form="myForm"></textarea><br><br>
+<input type="button" value="Submit" onclick="validate()"/><br>
+<div id="texas" style="display:none;padding-top:10px" align="center"><a href="Main_Page.html"><input type="button" value="Click here to continue" /></a></div>
+</form>
+
+<p style="color:grey">2019 All rights reserved to Lovely Health Services</p>
+</center>
+</body>
+</html>
